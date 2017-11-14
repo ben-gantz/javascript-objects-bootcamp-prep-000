@@ -1,11 +1,10 @@
 var playlist = {Radiohead: "Paranoid Android"}
 
-function updatePlaylist({}, artistName, songTitle) {
-  playlist.artistName = `${songTitle}`
-  return playlist
+function updatePlaylist(playlist, artistName, songTitle) {
+  return Object.assign({}, playlist, {[artistName]: songtitle})
 }
 
-function removeFromPlaylist({}, artistName) {
+function removeFromPlaylist(playlist, artistName) {
   delete playlist.artistName
   return playlist
 }
