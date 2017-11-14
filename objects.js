@@ -1,6 +1,4 @@
-var playlist = {
-  radiohead: 'paranoid android'
-}
+var playlist = {radiohead: "paranoid android"}
 
 function updatePlaylist(playlist, artistName, songTitle) {
   playlist.artistName = `${songTitle}`
