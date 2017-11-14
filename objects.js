@@ -1,11 +1,11 @@
-var playlist = {Kanye: "Gold Digger"}
+var playlist = {Radiohead: "Paranoid Android"}
 
-function updatePlaylist(playlist, artistName, songTitle) {
+function updatePlaylist({}, artistName, songTitle) {
   playlist.artistName = `${songTitle}`
   return playlist
 }
 
-function removeFromPlaylist(playlist, artistName) {
+function removeFromPlaylist({}, artistName) {
   delete playlist.artistName
   return playlist
 }
